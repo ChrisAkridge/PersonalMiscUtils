@@ -33,6 +33,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +43,7 @@
     <DefineConstants>TRACE;DEBUG;DOTNET35</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,6 +54,7 @@
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DocumentationFile>bin\Release\MiscUtil.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release 2.0|AnyCPU' ">
     <OutputPath>bin\Release 2.0\</OutputPath>
@@ -63,6 +66,7 @@
     <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -112,8 +116,11 @@
     <Compile Include="DotNet20\ExtensionAttribute.cs" />
     <Compile Include="DotNet20\IGrouping.cs" />
     <Compile Include="DotNet20\ILookup.cs" />
+    <Compile Include="Drawing\CelarianBitmap.cs" />
+    <Compile Include="Drawing\Palette.cs" />
     <Compile Include="EventArgs.cs" />
     <Compile Include="Collections\Extensions\RangeBasedExt.cs" />
+    <Compile Include="Exceptions\UnreachableCodeException.cs" />
     <Compile Include="Extensions\ReferenceExt.cs" />
     <Compile Include="Extensions\TimeRelated\DateTimeBasedExt.cs" />
     <Compile Include="Extensions\TimeRelated\TimeSpanBasedExt.cs" />
